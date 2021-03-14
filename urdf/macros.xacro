@@ -1,9 +1,10 @@
 <?xml version="1.0"?>
 <robot>
+
     <macro name="arm_link" params="name">
-        <link name="link_${name}">
+        <link name="${name}">
             <visual>
-                <origin xyz="0.0 0.0 0.4" rpy="0.0 0.0 0.0"/>
+                <origin xyz="0.0 0.0 0.1" rpy="0.0 0.0 0.0"/>
                 <geometry>
                     <cylinder radius="0.15" length="0.8"/>
                 </geometry>
@@ -18,15 +19,14 @@
             
             </collision>
         </link>
-
     </macro>
 
-    <macro name="arm_joint" params="name parent child ">
+    <macro name="arm_joint" params="name parent child axis">
         <joint name="${name}_joint" type="revolute">
-            <origin xyz="0.0 0.0 0.50" rpy="0.0 0.0 0.0"/>
+            <origin xyz="0.0 0.0 0.7" rpy="0.0 0.0 0.0"/>
             <parent link="${parent}"/>
             <child link="${child}"/>
-            <axis xyz="0.0 0.0 1.0"/>
+            <axis xyz="${axis}"/>
             <limit lower="-3.14" upper="3.14" effort="1000.0" velocity="0.5"/>
         </joint>
     </macro>
