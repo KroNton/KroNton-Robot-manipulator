@@ -44,19 +44,39 @@
         </collision>
     </link>
 
-    <xacro:arm_joint name="link01_link02" parent="link_01" child="link_02" axis="1 0 0" />
+    <xacro:arm_joint name="link01_link02" 
+    parent="link_01" 
+    child="link_02" 
+    axis="1 0 0" 
+
+    />
 
     <xacro:arm_link name="link_02"/>
 
-    <xacro:arm_joint name="link02_link03" parent="link_02" child="link_03" axis="1 0 0"/>
+    <xacro:arm_joint name="link02_link03" 
+    parent="link_02" 
+    child="link_03" 
+    axis="1 0 0"
+    
+    />
 
     <xacro:arm_link name="link_03"/>
 
-    <xacro:arm_joint name="link03_link04" parent="link_03" child="link_04" axis="1 0 0"/>
+    <xacro:arm_joint name="link03_link04" 
+    parent="link_03" 
+    child="link_04" 
+    axis="1 0 0"
+    
+    />
 
     <xacro:arm_link name="link_04"/>
 
-    <xacro:arm_joint name="link04_link05" parent="link_04" child="link_05" axis="1 0 0"/>
+    <xacro:arm_joint name="link04_link05" 
+    parent="link_04" 
+    child="link_05" 
+    axis="1 0 0"
+    
+    />
 
     <xacro:arm_link name="link_05"/>
     

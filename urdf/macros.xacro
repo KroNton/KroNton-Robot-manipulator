@@ -3,6 +3,12 @@
 
     <macro name="arm_link" params="name">
         <link name="${name}">
+            <inertial>
+                <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.4"/>
+                <mass value="57.904"/>
+                <inertia ixx="12.679" ixy="0.0" ixz="0.0" iyy="12.679" iyz="0.0" izz="0.651"/>
+            </inertial>
+            
             <visual>
                 <origin xyz="0.0 0.0 0.1" rpy="0.0 0.0 0.0"/>
                 <geometry>
