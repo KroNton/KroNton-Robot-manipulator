@@ -1,11 +1,32 @@
 <?xml version="1.0"?>
 <robot>
     
-
-    <gazebo>
-        <plugin name="gazebo_ros_control" filename="libgazebo_ros_control.so">
-        </plugin>
-    </gazebo>
+<!--ROS control plugin-->
+<gazebo>
+  <plugin name="gazebo_ros_control" filename="libgazebo_ros_control.so">
     
+  </plugin>
+</gazebo>
+    
+<!--gazebo materials-->
+  
+  <gazebo reference="base_link">
+    <material>Gazebo/Blue</material>
+  </gazebo>
 
+  <gazebo reference="link_01">
+    <material>Gazebo/Orange</material>
+  </gazebo>
+ <gazebo reference="link_02">
+    <material>Gazebo/Orange</material>
+  </gazebo>
+   <gazebo reference="link_03">
+    <material>Gazebo/Orange</material>
+  </gazebo>
+   <gazebo reference="link_04">
+    <material>Gazebo/Orange</material>
+  </gazebo>
+  <gazebo reference="link_05">
+    <material>Gazebo/Orange</material>
+  </gazebo>
 </robot>

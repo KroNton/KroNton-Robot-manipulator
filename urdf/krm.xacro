@@ -23,8 +23,12 @@
         </collision>
     </link>
 
-    <xacro:arm_joint name="base_link01"  parent="base_link" child="link_01" axis="0 0 1" />
+    <xacro:arm_joint name="base_link01"  
+    parent="base_link" 
+    child="link_01" 
+    axis="0 0 1" />
 
+    <xacro:joint_trans name="base_link01"/>
 
      <link name="link_01">
         <visual>
@@ -51,9 +55,11 @@
 
     />
 
+     <xacro:joint_trans name="link01_link02"/>
+
     <xacro:arm_link name="link_02"/>
 
-    <xacro:arm_joint name="link02_link03" 
+    <!--xacro:arm_joint name="link02_link03" 
     parent="link_02" 
     child="link_03" 
     axis="1 0 0"
@@ -78,6 +84,6 @@
     
     />
 
-    <xacro:arm_link name="link_05"/>
+    <xacro:arm_link name="link_05"/-->
     
 </robot>
